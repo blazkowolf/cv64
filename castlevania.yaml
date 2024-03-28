@@ -101,7 +101,7 @@ segments:
       - [0x00018430, asm]
       - [0x00018590, asm]
       - [0x0001A160, asm]
-      - [0x0001A7C0, asm]
+      - [0x0001A7C0, asm, debug]
       - [0x0001AE50, asm]
       - [0x0001AF80, asm]
       - [0x0001B7D0, asm]
@@ -362,6 +362,8 @@ segments:
       - [0x000948F0, data, DMAMgr]
       - [0x00094920, data, 113D0]
       - [0x00094940, data, 12900]
+      - [0x000976C0, data, debug]
+      - [0x000976D0, data]
       - [0x0009B8D0, data, 56B60]
       - [0x0009B8E0, data, 57050]
       - [0x0009B900, data, 574C0]
@@ -398,6 +400,8 @@ segments:
       - [0x000A34A0, rodata, 17A00]
       - [0x000A34F0, rodata, 1A160]
       - [0x000A3C80, rodata]
+      # - [0x000A3C80, rodata, debug]
+      # - [0x000A3CE4, rodata]
       - [0x000A3D10, rodata]
       - [0x000A41E0, rodata]
       - [0x000A4310, rodata]
@@ -454,6 +458,8 @@ segments:
       - { start: 0x000A8420, type: .bss, vram: 0x800A7840, name: object_0002 }  # Only contains ptr_Object_0002.
       - { start: 0x000A8420, type: bss, vram: 0x800A7850, name: figure }
       - { start: 0x000A8420, type: bss, vram: 0x800A78A0, name: F960 }
+      # - { start: 0x000A8420, type: bss, vram: 0x800D7120, name: debug }
+      # - { start: 0x000A8420, type: bss, vram: 0x800D7150 }
       - { start: 0x000A8420, type: .bss, vram: 0x800DD0D0, name: effect_manager }
       - { start: 0x000A8420, type: bss, vram: 0x800DD0E0 }
       - { start: 0x000A8420, type: bss, vram: 0x801229B0, name: libultra/io/motor }
